@@ -4,32 +4,28 @@ import ra.business.config.InputMethods;
 
 import java.util.Scanner;
 
-public class Manage {
+public class ShopManagement {
 
     public static void main(String[] args) {
        while (true){
-           System.out.println("-----------MENU----------------");
-           System.out.println("1: Quản lý xxxxxxx\n" +
-                   "2: Quản lý xxxxxxxxx\n" +
-                   "3: Quản lý xxxxxxxxxx\n" +
-                   "4: Thoát\n");
+           System.out.println("******************SHOP MENU*******************");
+           System.out.println("1: Quản lý danh mục sản phẩm\n" +
+                   "2: Quản lý sản phẩm\n" +
+                   "3: Thoát\n");
            System.out.println("mời bạn nhập");
            byte choice = InputMethods.getByte();
            switch (choice){
                case 1:
-                   MenuLon.menuXxxx();
+                 CategoryMenu.CategoryMenuImplement();
                    break;
                case 2:
-                   MenuNho.menuyyyyyy();
+              ProductMenu.ProductMenuImplement();
                    break;
                case 3:
-                   break;
-
-               case 4:
                    System.exit(0);
                    break;
                default:
-                   System.out.println("Lựa chọn không đúng");
+                   System.out.println("Lựa chọn không đúng mời chọn lại");
                    break;
 
            }
